@@ -32,7 +32,7 @@ setup(
     name="vastai_ssh_config_tool",
     version=read("vastai_ssh_config_tool","VERSION"),
     description="vastai_ssh_config_tool",
-    url="https://gitlab.com/deckrobot/ml/vastai-ssh-config-tool",
+    url="https://github.com/Anton-Cherepkov/vastai-ssh-config-tool",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     author="Anton Cherepkov",
