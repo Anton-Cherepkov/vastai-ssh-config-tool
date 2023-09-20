@@ -72,9 +72,9 @@ def replace_lines_inside_file(file_path: Path, start_line_ix: int, end_line_ix: 
 
 
 def generate_instances_ssh_config_lines(
-    ssh_user: str = "root",
-    ssh_name_prefix: str = "vast",
-    ssh_key_path: str = "~/.ssh/vast_deckrobot",
+    ssh_user: str,
+    ssh_name_prefix: str,
+    ssh_key_path: str,
 ) -> List[str]:
     lines = []
 
@@ -120,7 +120,7 @@ def generate_instances_ssh_config_lines(
 )
 @click.option(
     "--ssh-key-path",
-    default="~/.ssh/vast_deckrobot",
+    default="~/.ssh/vast_key",
 )
 def configure(ssh_user: str, ssh_host_name_prefix: str, ssh_key_path: str):
     touch_missing()
